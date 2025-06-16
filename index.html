@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>لعبة اختيار الصور</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="nameScreen">
+    <h2>ادخل اسمك للدخول للعبة</h2>
+    <input type="text" id="playerName" placeholder="أدخل اسمك هنا" />
+    <button id="enterGameBtn">دخول اللعبة</button>
+  </div>
+
+  <div id="gameSelection" class="hidden">
+    <h2>اختر اللعبة</h2>
+    <div class="mode-selection">
+      <div class="mode-box" id="modeCelebrities">علبة المشاهير</div>
+      <div class="mode-box" id="modeCountry">علبة الدولة</div>
+      <div class="mode-box disabled">جاري الصيانة</div>
+      <div class="mode-box disabled">جاري الصيانة</div>
+      <div class="mode-box disabled">جاري الصيانة</div>
+    </div>
+  </div>
+
+  <div id="gameBoard" class="hidden">
+    <button id="exitBtn" style="position: fixed; top: 10px; left: 10px;">خروج</button>
+    <h2>لعبة <span id="gameTitle"></span></h2>
+    
+    <div class="selected-box" id="selectedBox">
+      <img src="" alt="الصورة المختارة" />
+    </div>
+    <button id="selectImageBtn">اختيار صورة</button>
+    
+    <div class="main-box" id="grid"></div>
+  </div>
+
+  <div class="version">الإصدار 1.01</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
