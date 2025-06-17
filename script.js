@@ -4,7 +4,7 @@ const webhookUrl = atob(webhookUrlEncoded);
 
 const modes = {
   celebrities: { name: "علبة المشاهير", prefix: "img", count: 30 },
-  country: { name: "علبة الدولة", prefix: "immg", count: 30 }
+  country: { name: "علبة الاعلام", prefix: "immg", count: 30 }
 };
 
 let playerName = "";

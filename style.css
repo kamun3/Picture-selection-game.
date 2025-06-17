@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to right, #2c3e50, #3498db);
+  background: linear-gradient(to right, #222830, #0099ffb7);
   font-family: 'Segoe UI', sans-serif;
   color: white;
   text-align: center;
@@ -101,20 +101,20 @@ button:hover {
   object-fit: cover;
 }
 .cell.red-overlay::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 0, 0, 0.4);
-  z-index: 2;
+  background: rgba(255, 0, 0, 0.5);
+  pointer-events: none;
 }
 .selected-box {
   width: 150px;
   height: 150px;
   background: #eee;
-  margin: 0 auto 10px;
+  margin: 0 auto 20px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -123,17 +123,8 @@ button:hover {
   height: 100%;
   object-fit: cover;
 }
-#selectImageBtn {
-  background: #16a085;
-  border: none;
-  padding: 10px 20px;
-  color: white;
-  font-size: 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  margin: 5px;
-  transition: background 0.3s;
-}
-#selectImageBtn:hover {
-  background: #1abc9c;
+.exit-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
 }
