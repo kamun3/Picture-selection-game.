@@ -16,7 +16,7 @@
     <h2>اختر اللعبة</h2>
     <div class="mode-selection">
       <div class="mode-box" id="modeCelebrities">علبة المشاهير</div>
-      <div class="mode-box" id="modeCountry">علبة الاعلام</div>
+      <div class="mode-box" id="modeCountry">علبة الدولة</div>
       <div class="mode-box disabled">جاري الصيانة</div>
       <div class="mode-box disabled">جاري الصيانة</div>
       <div class="mode-box disabled">جاري الصيانة</div>
@@ -26,16 +26,27 @@
   <div id="gameBoard" class="hidden">
     <button id="exitBtn" style="position: fixed; top: 10px; left: 10px;">خروج</button>
     <h2>لعبة <span id="gameTitle"></span></h2>
-    
-    <div class="selected-box" id="selectedBox">
-      <img src="" alt="الصورة المختارة" />
+
+    <div style="display: flex; justify-content: center; gap: 40px;">
+      <div>
+        <div class="selected-box" id="selectedBox">
+          <img src="" alt="الصورة المختارة" />
+        </div>
+        <button id="selectImageBtn">اختيار صورة</button>
+      </div>
+
+      <div id="infoBox" class="info-box">
+        <h3>معلومات</h3>
+        <p id="infoLine1">الاسم: -</p>
+        <p id="infoLine2">الفريق/القارة: -</p>
+        <p id="infoLine3">المتابعين/السكان: -</p>
+      </div>
     </div>
-    <button id="selectImageBtn">اختيار صورة</button>
-    
+
     <div class="main-box" id="grid"></div>
   </div>
 
-  <div class="version">الإصدار 1.02</div>
+  <div class="version">الإصدار 1.01</div>
 
   <script src="script.js"></script>
 </body>

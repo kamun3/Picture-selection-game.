@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to right, #222830, #0099ffb7);
+  background: linear-gradient(to right, #2c3e50, #3498db);
   font-family: 'Segoe UI', sans-serif;
   color: white;
   text-align: center;
@@ -101,20 +101,20 @@ button:hover {
   object-fit: cover;
 }
 .cell.red-overlay::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 0, 0, 0.5);
-  pointer-events: none;
+  background-color: rgba(255, 0, 0, 0.6);
+  z-index: 2;
 }
 .selected-box {
   width: 150px;
   height: 150px;
   background: #eee;
-  margin: 0 auto 20px;
+  margin: 0 auto 10px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -123,8 +123,35 @@ button:hover {
   height: 100%;
   object-fit: cover;
 }
-.exit-button {
-  position: fixed;
-  top: 20px;
-  left: 20px;
+#selectImageBtn {
+  background: #16a085;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background 0.3s;
+}
+#selectImageBtn:hover {
+  background: #1abc9c;
+}
+.info-box {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 15px 20px;
+  border-radius: 12px;
+  width: 220px;
+  min-height: 150px;
+  color: white;
+  text-align: right;
+  font-size: 16px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.info-box h3 {
+  margin-top: 0;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
 }
